@@ -9,5 +9,28 @@ Antes de usar o código é necessário entender as suas limitações:
 3) O código foi criado de forma a controlar apenas um pino do arduino (Não impede que possa ser alterado)
 
 A forma de inserir as informações de horários no código é através das variáveis no escopo do código, sendo elas:
-//teste
-//int pinoLED = 13;
+
+int pinoLED = 13;
+__Ajuste de acordo com o horario atual
+int Relogio_Segundos = 0;
+int Relogio_Minutos = 23;
+int Relogio_Horas = 4;
+
+_Ajuste o horario para iniciar o sistema
+int Ligar_Segundos = 0;
+int Ligar_Minutos = 0;
+int Ligar_Horas = 9;
+
+//Ajuste o horario para desligar o sistema
+int Desligar_Segundos = 0;
+int Desligar_Minutos = 0;
+int Desligar_Horas = 10;
+
+# setup
+# loop
+# ContaSegundos
+# ContaRelogio_Minutos
+# ContaRelogio_Horas
+# ExibeTempo
+# Agendar_Horario_Desligar
+# Agendar_Horario_Ligar
