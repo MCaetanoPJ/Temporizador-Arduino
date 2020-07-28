@@ -10,27 +10,27 @@ Antes de usar o código é necessário entender as suas limitações:
 
 A forma de inserir as informações de horários no código é através das variáveis no escopo do código, sendo elas:
 
+# Ajustando qual pino digital será usado
+A variável que informa qual pino será usado pelo código é a "pinoLED" abaixo segue um exemplo de como ela utiliza o pino digital número 13
 int pinoLED = 13;
-__Ajuste de acordo com o horario atual
+
+# Ajustando o Timer com o horário atual
+As três variáveis abaixo são necessárias para definir horário atual, sendo uma variável especifica para as horas, minutos e segundos, abaixo segue um exemplo do horário 00:23:04 (Meia noite, vinte e três minutos e quatro segundos)
+
 int Relogio_Segundos = 0;
 int Relogio_Minutos = 23;
 int Relogio_Horas = 4;
 
-_Ajuste o horario para iniciar o sistema
+# Ajustando o Timer para Ativar
+As três variáveis possuem a função de informar o horário que o pino deve ser ativado, sendo uma variável especifica para as horas, minutos e segundos, abaixo segue um exemplo do horário 09:00:00 (Nove horas, zero minutos e zero segundos), o sistema ativará o pino as 09 horas em ponto e deixará ligado até o horário de desligar chegar
+
 int Ligar_Segundos = 0;
 int Ligar_Minutos = 0;
 int Ligar_Horas = 9;
 
-//Ajuste o horario para desligar o sistema
+# Ajustando o Timer para Desativar
+  As três variáveis possuem a função de informar o horário que o pino deve ser desativado, sendo uma variável especifica para as horas, minutos e segundos, abaixo segue um exemplo do horário 10:00:00 (Dez horas, zero minutos e zero segundos), o sistema Desativará o pino as 10 horas em ponto e deixará desligado até o horário de ligar novamente chegar
+  
 int Desligar_Segundos = 0;
 int Desligar_Minutos = 0;
 int Desligar_Horas = 10;
-
-# setup
-# loop
-# ContaSegundos
-# ContaRelogio_Minutos
-# ContaRelogio_Horas
-# ExibeTempo
-# Agendar_Horario_Desligar
-# Agendar_Horario_Ligar
