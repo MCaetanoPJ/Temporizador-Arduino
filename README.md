@@ -12,6 +12,7 @@ A forma de inserir as informações de horários no código é através das vari
 
 # Ajustando qual pino digital será usado
 A variável que informa qual pino será usado pelo código é a "pinoLED" abaixo segue um exemplo de como ela utiliza o pino digital número 13
+
 int pinoLED = 13;
 
 # Ajustando o Timer com o horário atual
