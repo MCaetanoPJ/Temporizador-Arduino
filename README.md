@@ -1,5 +1,5 @@
 # Temporizador-Arduino
-Temporizador que monitora o horário de acordo com o usuário e ativa ou desativa um pino em horário programado
+Temporizador para arduino uno que ativa e sesativa em horário programado pelo desenvolvedor
 
 O código funciona de maneira simples, e não faz o uso de bateria interna, necessário o uso de uma fonte externa de energia, portanto o código não sabe o horário exato atualmente, precisando
 
